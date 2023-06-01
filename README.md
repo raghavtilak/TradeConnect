@@ -7,7 +7,7 @@
 
 TradeConnect enables Retailers to manage the supply chain seamlessly through their mobile phones. it also enables them to manage their store, have a record of their sells, orders and connections. And guess what everything synced on cloud in realtime.
 
-[Download APK](https://github.com/raghavtilak/TradeConnect/blob/master/app/release/app-release.apk)
+[Download APK](https://github.com/raghavtilak/TradeConnect/blob/main/FrontendCode/TradeConnect-master/app/release/app-release.apk)
 
 ## Documentation
 
