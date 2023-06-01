@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bottomsheet_bg"
+    android:paddingBottom="20dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context=".ui.fragment.AddConnectionFragment">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Search Retailer"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/phoneCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextFieldSearch"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@id/nextBtn"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:prefixTextAppearance="@style/CustomPrefixStyle"
+            app:hintTextColor="@color/colorPrimaryDark"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSearch"
+                android:hint="Retailer Name/Phone/Shop Address"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_retailer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

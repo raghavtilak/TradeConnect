@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TradeConnect</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="web_client_id">30979721158-6m96f8vf3bk8gvrqd3fq7pedipr24aoe.apps.googleusercontent.com</string>
+
+    <string-array name="bustypesample">
+        <item>Couldn\'t load business types</item>
+    </string-array>
+
+    <string-array name="sample">
+        <item>Choose Retailer</item>
+    </string-array>
+    <string-array name="sample2">
+        <item>Choose Product</item>
+    </string-array>
+    <string-array name="sample3">
+        <item>Choose Batch</item>
+    </string-array>
+
+    <string-array name="analytics_type">
+        <item>Last 7 Days</item>
+        <item>Last 6 Months</item>
+        <item>Last 3 Years</item>
+    </string-array>
+</resources>

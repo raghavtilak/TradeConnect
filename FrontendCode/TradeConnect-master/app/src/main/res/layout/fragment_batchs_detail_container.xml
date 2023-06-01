@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottomsheet_bg"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context=".ui.fragment.BatchsDetailContainerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Batch Details"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/updateSell"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Update Sell"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:drawablePadding="5dp"
+            android:backgroundTint="@color/darkBox"
+            android:background="@drawable/rounded_corners"
+            android:drawableTint="@color/colorSecondary"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/ic_baseline_mode_24" />
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:backgroundTint="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorSecondary"
+        app:tabBackground="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorSecondary"
+        app:tabTextAppearance="@style/CustomPrefixStyle"
+        app:tabMode="fixed"
+        app:tabPadding="10dp"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_below="@id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

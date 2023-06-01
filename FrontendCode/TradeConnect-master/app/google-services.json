@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "30979721158",
+    "project_id": "digitalpaymentsbook-d9750",
+    "storage_bucket": "digitalpaymentsbook-d9750.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30979721158:android:f74b119dd7c09b8bd154c7",
+        "android_client_info": {
+          "package_name": "com.raghav.digitalpaymentsbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30979721158-u6upc069rk7ejcmgehb47aht54tupp7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raghav.digitalpaymentsbook",
+            "certificate_hash": "ea5b3c2be7950d4c54f70a95d099654b3cfaf667"
+          }
+        },
+        {
+          "client_id": "30979721158-6m96f8vf3bk8gvrqd3fq7pedipr24aoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz25yi5eqJzoWla5TepPgXZY0nADJ9Vtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30979721158-6m96f8vf3bk8gvrqd3fq7pedipr24aoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+exports.randString = (length = 10) => {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    
+    return result;
+}
+  
+exports.SKUGenerator = (productName) =>{
+    const sku = `${productName.substring(0, 3)}-${Math.floor(Math.random() * 10000)}`;
+    return sku.toUpperCase();
+}
+  

@@ -1,0 +1,15 @@
+***** TEAM DETAILS *****
+
+Member 1
+Name: Raghav Sharma
+Roll: 19ESKIT073
+Branch: IT-B (G1)
+Role: Mobile App Developer (Android,Kotlin)
+
+********
+
+Member 2
+Name: Mukul Jangid
+Roll: 19ESKIT058
+Branch: IT-B (G1)
+Role: Backend Developer (NodeJS,Express,MongoDB)

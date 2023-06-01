@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="20dp"
+    tools:context=".ui.activity.AddStockActivity">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Batch"
+        android:textColor="@color/colorSecondary"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/batchNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toStartOf="@id/searchCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t1">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextFieldCustomerBatchNo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Batch No"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:prefixTextAppearance="@style/CustomPrefixStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBatchNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/searchCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/batchNo"
+        app:layout_constraintTop_toBottomOf="@id/t1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_search_24" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/batchNo">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextFieldProductName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product name"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:prefixTextAppearance="@style/CustomPrefixStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mrp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintEnd_toStartOf="@+id/quantity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productName">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextFieldMrp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MRP"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:prefixTextAppearance="@style/CustomPrefixStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextMrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberSigned"
+                android:lines="1"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/mrp"
+        app:layout_constraintTop_toBottomOf="@id/productName">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextFieldQuantity"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:prefixTextAppearance="@style/CustomPrefixStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberSigned"
+                android:lines="1"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mfgdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintEnd_toStartOf="@+id/expdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mrp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextFieldMfg"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mfg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:prefixTextAppearance="@style/CustomPrefixStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mfgTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="numberSigned"
+                android:lines="1"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/expdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/mfgdate"
+        app:layout_constraintTop_toBottomOf="@id/quantity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextFieldExpiry"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expiry"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:prefixTextAppearance="@style/CustomPrefixStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/expTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="numberSigned"
+                android:lines="1"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/buyPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintEnd_toStartOf="@+id/sellPrice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mfgdate">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextFieldBuyPrice"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buying Price"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:prefixTextAppearance="@style/CustomPrefixStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBuyPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberSigned"
+                android:lines="1"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/sellPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/buyPrice"
+        app:layout_constraintTop_toBottomOf="@id/expdate">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextFieldSellPrice"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selling Price"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            app:hintAnimationEnabled="false"
+            app:hintTextColor="@color/colorPrimaryDark"
+            app:prefixTextAppearance="@style/CustomPrefixStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSellPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberSigned"
+                android:lines="1"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/colorSecondary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Update"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
