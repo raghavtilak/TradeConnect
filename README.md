@@ -11,13 +11,13 @@ TradeConnect enables Retailers to manage the supply chain seamlessly through the
 
 ## Documentation
 
-- [Abstract](https://github.com/raghavtilak/TradeConnect/blob/master/docs/AbstractTradeConnect.pdf)
-- [SRS](https://github.com/raghavtilak/TradeConnect/blob/master/docs/SRSTradeConnect.pdf)
-- [Pproject Report PDF](https://github.com/raghavtilak/TradeConnect/blob/master/docs/ProjectReportTradeConnect.pdf)
-- [Pproject Report Latex](https://github.com/raghavtilak/TradeConnect/blob/master/docs/ProjectReportTradeConnect.zip)
-- [Form1](https://github.com/raghavtilak/TradeConnect/blob/master/docs/Form1.pdf)
-- [Form2](https://github.com/raghavtilak/TradeConnect/blob/master/docs/Form2.pdf)
-- [Form3](https://github.com/raghavtilak/TradeConnect/blob/master/docs/Form3.pdf)
+- [Abstract](https://github.com/raghavtilak/TradeConnect/blob/main/Project%20Documentation/AbstractTradeConnect.pdf)
+- [SRS](https://github.com/raghavtilak/TradeConnect/blob/main/Project%20Documentation/SRSTradeConnect.pdf)
+- [Pproject Report PDF](https://github.com/raghavtilak/TradeConnect/blob/main/Project%20Documentation/ProjectReportTradeConnect.pdf)
+- [Pproject Report Latex](https://github.com/raghavtilak/TradeConnect/blob/main/Project%20Documentation/ProjectReportTradeConnect.zip)
+- [Form1](https://github.com/raghavtilak/TradeConnect/blob/main/Project%20Documentation/Form1.pdf)
+- [Form2](https://github.com/raghavtilak/TradeConnect/blob/main/Project%20Documentation/Form2.pdf)
+- [Form3](https://github.com/raghavtilak/TradeConnect/blob/main/Project%20Documentation/Form3.pdf)
 
 ## Demo
 
@@ -49,14 +49,40 @@ TradeConnect enables Retailers to manage the supply chain seamlessly through the
 |---     |---                  |
 |![myprofile](https://github.com/raghavtilak/TradeConnect/assets/74963954/e9ed1de9-9d2d-44d5-b806-8c1a613c4fc0)|![analyticsorders](https://github.com/raghavtilak/TradeConnect/assets/74963954/aa52cab9-5a95-462e-b06b-88a701dd193c)|
 
-## Team Details
-### Member 1
+# Run Configurations
+## Frontend
+### THROUGH APK
+
+- STEP 1: Copy the apk file from path app/release/app-release.apk to your android device(>=8.0)
+- STEP 2: Install the apk file in your device.
+
+### THROUGH CODE
+
+- STEP 1: Install latest version of Android Studio.
+- STEP 2: Copy the TradeConnectApp folder to your system.
+- STEP 3: Open AndroidStudio, go to the location where you copie the folder, and open it as AndroidProject.
+- STEP 4: Once the initial build is done, connect your phone to the system through USB cable.
+- STEP 5: Allow USB debugging, in your phone.
+- STEP 6: Click on the Run button in the AndroidStudio, selecting your device.
+
+
+## Backend
+- STEP 1: Install latest version of node.
+- STEP 2: Copy the TradeConnectBackend folder to your system.
+- STEP 3: Open VScode or any IDE, go to the location where you copie the folder, open terminal and run npm install.
+- STEP 4: Once the packages are installed create a .env file if you are running in your local machine and set environment variables of server if you are deploying it on cloud.
+- STEP 5: Set following environment variables using in backend JWT_SECRET=college_project JWT_EXPIRY=30d DB_URL=mongodb://127.0.0.1:27017/Khatabook MAIL_USER=mukul805809@gmail.com MAIL_PASSWORD=your_password.
+- STEP 6: Open a terminal in your IDE and run npm start if you are running on local and run server on deployment cloud if you are using cloud.
+
+
+# Team Details
+## Member 1
 - Name: Raghav Sharma
 - Roll: 19ESKIT073
 - Branch: IT-B (G1)
 - Role: Mobile App Developer (Android,Kotlin) 
 
-### Member 2
+## Member 2
 - Name: Mukul Jangid
 - Roll: 19ESKIT058
 - Branch: IT-B (G1)
